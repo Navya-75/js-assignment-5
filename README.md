@@ -45,6 +45,34 @@ Enter the first number in the 1st Number input box.
 
 Enter the second number in the 2nd Number input box.
 
+
+
+Password Generator App
+This is a web-based Password Generator built using HTML, CSS, and JavaScript.
+
+Features
+Generates a random password based on user-selected options.
+
+Adjustable password length using a slider (1 to 50 characters).
+
+Option to include:
+
+Alphabets (uppercase and lowercase)
+
+Numbers
+
+Displays the generated password in a text box.
+
+How to Use
+Adjust the slider to set the desired password length.
+
+Check the boxes to include Characters and/or Numbers.
+
+Click the Password button to generate a password.
+
+View the password in the text field above the button.
+
+
 Click Multiply to multiply the numbers.
 
 Click Division to divide the first number by the second.
