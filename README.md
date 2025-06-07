@@ -26,3 +26,27 @@ Enter text in the Input box.
 Click the Reverse button.
 
 The reversed text appears in the Output box.
+
+
+
+
+Multiplication & Division App
+This is a basic web-based calculator that performs multiplication and division on two user-input numbers using HTML, CSS, and JavaScript.
+
+Features
+Accepts two numbers as input.
+
+Performs multiplication or division based on the button clicked.
+
+Displays the result below the buttons.
+
+How to Use
+Enter the first number in the 1st Number input box.
+
+Enter the second number in the 2nd Number input box.
+
+Click Multiply to multiply the numbers.
+
+Click Division to divide the first number by the second.
+
+View the result displayed under "The result is:".
