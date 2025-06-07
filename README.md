@@ -15,3 +15,14 @@ Enter a number in the Input box.
 Click the Reverse button.
 
 The reversed number appears in the Output box.
+
+
+Reverse Input App
+This is a basic HTML + JavaScript project that reverses the text entered in an input field and shows the result in another field.
+
+How to Use
+Enter text in the Input box.
+
+Click the Reverse button.
+
+The reversed text appears in the Output box.
