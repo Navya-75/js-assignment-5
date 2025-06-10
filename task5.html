@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .box{
+            width: 500px;
+            height: 550px;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: rgb(0, 0, 0,0.2);
+        }
+        input[type=text]{
+            width:350px;
+            height:20px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=email]{
+            width:350px;
+            height:20px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+        span{
+            color: red;
+            margin-left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <label style="padding-right: 10px;">First Name</label>
+                <i class="fa-solid fa-user"></i>
+            <input type="text" id="fname" placeholder="Firstname">
+            <span id="fname_error"></span><br><br>
+             <label style="padding-right: 10px;">Last Name</label>
+                <i class="fa-solid fa-user"></i>
+            <input type="text" id="lname" placeholder="Lastname">
+            <span id="lname_error"></span><br><br>
+            <label style="padding-right: 34px;">E-mail</label>
+               <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="mail" placeholder="Email">
+            <span id="mail_error"></span><br><br>
+            <label style="padding-right: 37px;">Phone</label>
+            <i class="fa-solid fa-phone"></i>
+             <input type="text" id="phone" placeholder="Phone Number">
+             <span id="phone_error"></span><br><br>
+             <label style="padding-right:20px;">Address</label>
+             <i class="fa-solid fa-house"></i>
+             <input type="text" id="add" placeholder="Address">
+             <span id="add_error"></span><br><br>
+              <label style="padding-right:46px;">City</label>
+             <i class="fa-solid fa-house"></i>
+             <input type="text" id="city" placeholder="City">
+             <span id="city_error"></span><br><br>
+            <label style="padding-right:46px;">State</label>
+              <i class="fa-solid fa-bars"></i>
+              <select id="state">
+                <option value="" disabled selected>Please select your state</option>
+                <option value="AP">Andhra pradesh</option>
+                <option value="tn">Telangana</option>
+                <option value="mh">Maharashtra</option>
+                <option value="ka">Kerala</option>
+                </select>
+                <span id="state_error"></span><br><br>
+             <label>Do you have hosting?</label>
+             <input type="radio" value="yes">Yes<br>
+             <input type="radio" value="No" style="margin-left: 148px;">No<br><br>
+             <label style="padding-right: 10px;">Project Description</label>
+                <i class="fa-solid fa-pencil"></i>
+             <textarea id="desc"></textarea>
+             <span id="desc_error"></span><br><br>
+             <button onclick="func()">SUBMIT</button>
+        </div>
+    </div>
+    <script>
+                function func(){
+                    let name = document.getElementById("fname").value;
+                    let lname = document.getElementById("lname").value;
+                    let Email = document.getElementById("mail").value;
+                    let Phone = document.getElementById("phone").value;
+                    let Address = document.getElementById("add").value
+                    let City = document.getElementById("city").value;
+                    let State = document.getElementById("state").value;
+                    let Desc = document.getElementById("desc").value;
+                    let valid = true;
+
+
+                    
+                if(name === ""){
+                    document.getElementById("fname_error").innerHTML="First name is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("fname_error").innerHTML="";
+                }
+
+                if(lname === ""){
+                    document.getElementById("lname_error").innerHTML="Last name is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("lname_error").innerHTML="";
+                }
+                if(Email === ""){
+                    document.getElementById("mail_error").innerHTML="Email is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("mail_error").innerHTML="";
+                }
+
+                if(Phone === ""){
+                    document.getElementById("phone_error").innerHTML="Phone no is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("phone_error").innerHTML="";
+                }
+
+                if(Address === ""){
+                    document.getElementById("add_error").innerHTML="Address is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("add_error").innerHTML="";
+                }
+
+                if(City === ""){
+                    document.getElementById("city_error").innerHTML="City is required";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("city_error").innerHTML="";
+                }
+
+                if (State === "") {
+                    document.getElementById("state_error").innerHTML = "Please select your state";
+                    valid = false;
+                } else {
+                    document.getElementById("state_error").innerHTML = "";
+                }
+
+                if(Desc === ""){
+                    document.getElementById("desc_error").innerHTML="Can you give us a small description";
+                    valid = false;
+                }
+                else{
+                    document.getElementById("desc_error").innerHTML="";
+                }
+
+                if(valid === true){
+                    alert("your form is submitted")
+                }
+                }
+             </script>
+</body>
+</html>
